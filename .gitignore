@@ -3,3 +3,5 @@
 ./.venv/
 venv/
 assets/
+/temp_audio.wav
+temp_audio.wav

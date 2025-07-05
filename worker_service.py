@@ -1,10 +1,11 @@
 import stt_service
 import checkers
 import whisper_timestamped as whisper
+import torch
 class WorkerService:
 
     def __init__(self):
-        device = "cuda" if stt_service.is_cuda_available else "cpu"
+        device = "cuda" if torch.cuda.is_available() else "cpu"
         model= whisper.load_model("base", device=device)
         self.model = model
         self.model_size = "base"

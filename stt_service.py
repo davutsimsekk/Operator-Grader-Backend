@@ -2,10 +2,7 @@ import whisper_timestamped as whisper
 
 import os
 import json
-import torch
 
-is_cuda_available = torch.cuda.is_available()
-device = "cuda" if is_cuda_available else "cpu"
 
 
 
